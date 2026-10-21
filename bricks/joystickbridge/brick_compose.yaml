@@ -1,0 +1,26 @@
+# Source: https://forum.arduino.cc/t/getting-a-neato-xv-11-lidar-working-on-the-q/1445568/18
+services:
+  joystick:
+    # image is pulled from docker hub
+    image: mjs513/joystickbridge_autodetect:latest
+
+    privileged: true
+
+    # --- ADDED FOR BLUETOOTH SUPPORT ---
+    #network_mode: "host"
+    volumes:
+      - /var/run/dbus:/var/run/dbus
+      - /dev/input:/dev/input:ro  # Mounts input directory dynamically as Read-Only
+    # -----------------------------------
+    
+    group_add:
+      - "995"
+
+    devices:
+      #- "/dev/input:/dev/input"
+      - "/usr/sbin/rfkill:/usr/sbin/rfkill" # Added to support 'rfkill unblock bluetooth' inside the script
+    
+    ports:
+      # Expose the port for communication with the container's Flask web application.
+      # See: https://docs.docker.com/reference/compose-file/services/#ports
+      - "5000:5000"# Source: https://forum.arduino.cc/t/getting-a-neato-xv-11-lidar-working-on-the-q/1445568/18

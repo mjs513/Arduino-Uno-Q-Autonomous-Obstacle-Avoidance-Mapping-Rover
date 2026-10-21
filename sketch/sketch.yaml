@@ -1,0 +1,19 @@
+profiles:
+  default:
+    fqbn: 
+    platforms:
+      - platform: arduino:zephyr
+    libraries:
+      - LibPrintf (1.2.13)
+      - dir: /home/arduino/libraries/Encoder
+      - dir: /home/arduino/libraries/xv11lidar-arduino
+      - Adafruit BNO055 (1.6.4)
+      - dependency: Adafruit BusIO (1.17.4)
+      - dependency: Adafruit Unified Sensor (1.1.15)
+      - elapsedMillis (1.0.6)
+      - Arduino_JSON (0.2.0)
+      - SparkFun VL53L5CX Arduino Library (1.0.3)
+      - PID (1.2.0)
+      - RunningAverage (0.4.9)
+
+default_profile: default

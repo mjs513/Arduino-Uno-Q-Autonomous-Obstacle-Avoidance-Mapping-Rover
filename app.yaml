@@ -1,0 +1,6 @@
+name: rover wSteering v3 wStasis_lidar
+description: Original main.py was changed to address structual changes to the api
+ports: []
+bricks:
+- joystickbridge: {}
+icon: 😀
