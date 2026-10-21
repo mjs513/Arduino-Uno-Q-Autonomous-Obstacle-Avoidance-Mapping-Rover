@@ -36,25 +36,27 @@ This project is meant to serve two purposes:
 ## **ASSEMBLY**
 
 ![RoverSide](images/RoverSide.jpg) 
-![RoverSide](images/RoverFront.jpg) 
+![RoverFront](images/RoverFront.jpg) 
 
 **BUILD COMMENTS:**
 
 1.  The battery (12) has a Deans-T connector so I used the Deans-T Plug to 2-PIN JST-PH2.0 (6) to the motor shield where I used a female jst to connect to the jst cable I used with the battery.  I cut the other end off and attached it to the Motore Shield
 
-2. On the motor shield I cut the Vin trace so the battery (12) doesn’t supply power to the Arduino Uno Q
+![PowerConnector](images/PowerConnector.jpg) 
+
+3. On the motor shield I cut the Vin trace so the battery (12) doesn’t supply power to the Arduino Uno Q
    ![RoverSide](images/MotorShieldVin.png) 
 
 4. The chassis comes with wiring for the Motors that have a 6 pin jstconnector on them. I used the 6 pin cables (7) to connector from the motor wiring to extend them and attach them to the terminal shield.
-![RoverSide](images/MotorConnector.jpg) 
+![MotorConnector](images/MotorConnector.jpg) 
 
 **Wire Color Coding and Pin Connection**
   
-![RoverSide](images/TerminalShieldSch.jpg) 
+![Schematic](images/TerminalShieldSch.jpg) 
 Figure  Terminal Shield
 
  
-![RoverSide](images/MotorShield.jpg) 
+![MotorShield Power Pins](images/MotorShield.jpg) 
 Figure  Motor Shield
 
 
@@ -93,7 +95,7 @@ Figure  Motor Shield
 | Yellow    | 0            | TX on terminal shield                 |
 
 **6. BNO055 IMU and VL53 on Wire1**
-![RoverSide](images/QwiicAdapt.png) 
+![QWIIC Adapter](images/QwiicAdapt.png) 
 
 | **Device** | **Color**         | **Function** | **Pin**                                      |
 | :--------- | :---------------- | :----------- | :------------------------------------------- |
