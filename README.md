@@ -594,16 +594,16 @@ LED heartbeat toggles every 500 ms.
 
 ---
 
-# **Key Features**
+## **Key Features**
 
-### ✔ Real-time IMU quaternion processing  
-### ✔ Magnetic declination + heading normalization  
-### ✔ Thread-safe odometry  
-### ✔ Differential drive control  
-### ✔ Linux joystick integration  
-### ✔ Depth sensing via VL53L5CX  and XV-11 LIDAR
-### ✔ Multithreaded Zephyr architecture  
-### ✔ RouterBridge IPC for autonomy  
+ ✔ Real-time IMU quaternion processing  
+ ✔ Magnetic declination + heading normalization  
+ ✔ Thread-safe odometry  
+ ✔ Differential drive control  
+ ✔ Linux joystick integration  
+ ✔ Depth sensing via VL53L5CX  and XV-11 LIDAR
+ ✔ Multithreaded Zephyr architecture  
+ ✔ RouterBridge IPC for autonomy  
 
 ---
 
