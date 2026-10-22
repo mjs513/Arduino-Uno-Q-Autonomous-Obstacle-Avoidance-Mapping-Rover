@@ -111,7 +111,7 @@ Figure  Motor Shield
    ---
 
    
-# **README — Autonomous + Manual Robot Control System (Arduino UNO Q + Zephyr + Linux Bridge)**
+# **SOFTWARE**
 
 ## **Overview**
 This project implements a hybrid **manual + autonomous robot control stack** running on the **Arduino UNO Q** with Zephyr RTOS and Linux-side coordination via **Arduino RouterBridge**.  
