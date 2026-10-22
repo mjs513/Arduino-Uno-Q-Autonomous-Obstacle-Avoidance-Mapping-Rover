@@ -788,7 +788,10 @@ cd BreezySLAM/python
 python3.13 -m pip install .
 ```
 
+# FINAL RESULT
 
+Test run of automonous mode:
+![MAP](images/Map.png) 
 
 
 
